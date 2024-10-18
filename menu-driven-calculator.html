@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MENU DRIVEN CALCULATOR</h1><br><br>
+    <label>Enter first number</label>
+    <input type="number" id="input-1"><br><br>
+
+    <label>Enter second number</label>
+    <input type="number" id="input-2"><br><br>
+
+    <label>Enter your choice</label><br>
+    <label>1 for addition</label><br>
+    <label>2 for substraction</label><br>
+    <label>3 for multiplication</label><br>
+    <label>4 for division</label><br>
+    <input type="number" id="choice"><br><br>
+
+    <button id="btn">Click</button>
+    <h1 id="h1-1"></h1>
+
+
+    <script>
+            let a,b,c,result;
+        document.getElementById("btn").onclick = ()=>{
+
+            a = Number(document.getElementById("input-1").value);
+            b =  Number(document.getElementById("input-2").value);
+            c =  Number(document.getElementById("choice").value);
+
+            if( c ==1){
+
+                result = a+b;
+            }else if (c ==2){
+                result = a-b;
+            }else if(c ==3){
+                result = a*b;
+            }else if( c== 4){
+                result = a/b;
+            }else{
+                result= "Error";
+            }
+
+            document.getElementById("h1-1").innerHTML = result;
+
+            
+        }
+
+
+    </script>
+
+</body>
+</html>
