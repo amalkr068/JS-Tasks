@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>WEIGHTED AVERAGE GRADE CALCULATION </h1>
+
+    <label>mark on written test</label>
+    <input type="text" id="input-1"><br><br>
+
+    <label>mark on lab</label>
+    <input type="text" id="input-2"><br><br>
+
+    <label>mark on assignment</label>
+    <input type="text" id="input-3"><br><br>
+
+    <button id="btn">Click</button>
+
+    <h2 id="h2-1"></h2>
+    <h1 id="h1-1"></h1>
+
+
+
+    <script>
+        let test,lab,assignment,average;
+        document.getElementById("btn").onclick = ()=>{
+
+            test = Number(document.getElementById("input-1").value);
+            lab =  Number(document.getElementById("input-2").value);
+            assignment =  Number(document.getElementById("input-3").value);
+
+            average = (test+lab+assignment)/3;
+
+            if(average >=8 ){
+            document.getElementById("h2-1").innerHTML = average;
+            document.getElementById("h1-1").innerHTML = "A+";
+        }else if( average <=7 && average >=6){
+            document.getElementById("h2-1").innerHTML = average;
+            document.getElementById("h1-1").innerHTML = "B+";
+        }else if( average <=5 && average >=3){
+            document.getElementById("h2-1").innerHTML = average;
+            document.getElementById("h1-1").innerHTML = "C+";
+        } else if(average <=2 ){
+            document.getElementById("h2-1").innerHTML = average;
+            document.getElementById("h1-1").innerHTML = "D+";}
+
+        }
+
+       
+    </script>
+
+
+</body>
+</html>
