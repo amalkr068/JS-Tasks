@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PRIME NUMBER CHECK</h1>
+    <label>Enter a Number</label>
+    <input type="number" id="input">
+    <button id="btn">Click</button>
+    <h1 id="h1-1"></h1>
+
+
+
+    <script>
+
+        document.getElementById("btn").onclick = ()=>{
+            let number = document.getElementById("input").value;
+            let flag=0;
+            for(let i=2;i<=number/2;i++){
+                if(number%i == 0){
+                    flag = 1;
+                    break;
+                }
+            }
+            if(flag == 1){
+                document.getElementById("h1-1").innerHTML = "NOT A PRIME NUMBER";
+            }else {
+                document.getElementById("h1-1").innerHTML = " PRIME NUMBER";
+            }
+           
+        }
+    </script>
+    
+</body>
+</html>
