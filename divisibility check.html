@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DIVISIBILITY CHECK</h1>
+    <label>Enter a number</label>
+    <input type="text" id="input">
+    <button id="btn">Click</button>
+    <h1 id="h1-1"></h1>
+
+
+
+    <script>
+        document.getElementById("btn").onclick = ()=>{
+            let number = Number(document.getElementById("id").value);
+            if(number/10){
+                document.getElementById("h1-1").innerHTML = "DIVISIBLE BY 10";//NEED TO IMPROVE THIS CODE.
+            }
+        }
+    </script>
+</body>
+</html>

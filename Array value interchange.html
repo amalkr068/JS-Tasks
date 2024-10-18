@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        ARRAY VALUE INTERCHANGE
+    </h1>
+   
+    <script>
+
+        let a =["10","20","30","40","50"];
+        let b = ["60","70","80","90","100"]
+        
+        for(let i=0;i<4;i++){
+            let swap = a[i];
+            a[i] = b[i];
+            b[i] = swap;
+        }
+
+        console.log("A =");
+        for(let i=0;i<4;i++){
+            console.log(`${a[i]}`);
+        }
+
+        console.log("B=");
+        for(let i=0;i<4;i++){
+            console.log(`${b[i]}`);
+        }
+    </script>
+</body>
+</html>
