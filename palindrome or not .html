@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PALINDROME OR NOT</h1>
+
+
+
+    <script>
+
+        let name ="level";
+        let n = name.length;
+        console.log(n)
+        let flag = 0;
+        
+        for(let i=0;i<n;i++){
+            
+            if(name[i] != name[n-1-i]){
+                flag =1;
+                break;
+            }
+        }
+
+        if(flag == 1){
+            console.log("NOT A PALINDROME");
+        }else {
+            console.log("PALINDROME");
+        }
+    </script>
+</body>
+</html>
