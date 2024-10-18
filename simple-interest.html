@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Simple Interest Calculator</h1>
+    <label>Enter the Capital</label>
+    <input type="digit" id="input-1"><br><br>
+
+    <label>Enter the interst</label>
+    <input type="digit" id="input-2"><br><br>
+
+    <label>Enter the Term</label>
+    <input type="digit" id="input-3"><br><br>
+
+    <button id="btn">Result</button>
+    <br><br>
+    <h1 id="h1-1"></h1>
+
+
+<script>
+        let SI,P,R,n;
+    document.getElementById("btn").onclick = ()=>{
+        P= Number(document.getElementById("input-1").value);
+        R=Number(document.getElementById("input-2").value);
+        n=Number(document.getElementById("input-3").value);
+
+        SI=(P*R*n)/100;
+        document.getElementById("h1-1").innerHTML = SI;
+        console.log(document.getElementById("h1-1").innerHTML = SI)
+    }
+
+
+
+</script>
+
+
+</body>
+</html>
