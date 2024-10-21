@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INCOME TAX CALCULATION</h1>
+    <label>Enter your salary</label><br>
+    <input type="number" id="input-1"><br><br>
+    <button id="btn">Click</button>
+    <h2 id="h2"></h2>
+
+
+
+    <script>
+
+        let tax;
+
+        document.getElementById("btn").onclick = ()=>{
+
+            let salary = document.getElementById("input-1").value;
+
+            if(salary<= 10000){
+                document.getElementById("h2").innerHTML = "No tax"
+            } else if (salary>10000 && salary<=100000){
+                tax = salary*0.10;
+                document.getElementById("h2").innerHTML = `Tax = ${tax}`
+
+            }  else if (salary>100000 && salary<=1000000){
+                tax = salary*0.25;
+                document.getElementById("h2").innerHTML = `Tax = ${tax}`
+
+            }  else if (salary>1000000){
+                tax = salary*0.35;
+                document.getElementById("h2").innerHTML = `Tax = ${tax}`
+
+            }
+        }
+
+
+
+    </script>
+
+</body>
+</html>
