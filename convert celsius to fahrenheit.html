@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>CONVERT DEGREE CELSIUS TO FAHRENHEIT </h1>
+
+    <label>Enter temperature in centigrade</label><br><br>
+    <input type="number" id="input-1"><br><br>
+
+    <button id="btn">Click</button>
+    <h2 id="h2"></h1>
+
+
+
+    <script>
+
+        document.getElementById("btn").onclick = ()=>{
+
+           let centi = document.getElementById("input-1").value;
+           let fh = (centi * 9/5)+ 32;
+
+           document.getElementById("h2").innerHTML = `${fh} Fahrenheit`
+        }
+
+
+
+
+    </script>
+
+
+</body>
+</html>
